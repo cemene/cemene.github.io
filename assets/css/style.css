@@ -425,6 +425,132 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Banner Section
+--------------------------------------------------------------*/
+#banner {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+#banner .carousel, #banner .carousel-inner, #banner .carousel-item, #banner .carousel-item::before {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#banner .carousel-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  bottom: 60px;
+  top: 110px;
+  left: 50px;
+  right: 50px;
+}
+#banner .carousel-content {
+  background: rgba(28, 23, 21, 0.7);
+  padding: 20px;
+  color: #fff;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  border-top: 5px solid #5fcf80;
+}
+#banner .carousel-content h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+#banner .btn-get-started {
+  font-family: "Muli", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #5fcf80;
+}
+#banner .btn-get-started:hover {
+  background: #5fcf80;
+  color: #fff;
+  text-decoration: none;
+}
+#banner .carousel-inner .carousel-item {
+  transition-property: opacity;
+}
+#banner .carousel-inner .carousel-item,
+#banner .carousel-inner .active.carousel-item-start,
+#banner .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+#banner .carousel-inner .active,
+#banner .carousel-inner .carousel-item-next.carousel-item-start,
+#banner .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+#banner .carousel-inner .carousel-item-next,
+#banner .carousel-inner .carousel-item-prev,
+#banner .carousel-inner .active.carousel-item-start,
+#banner .carousel-inner .active.carousel-item-end {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+#banner .carousel-control-prev, #banner .carousel-control-next {
+  width: 10%;
+}
+#banner .carousel-control-next-icon, #banner .carousel-control-prev-icon {
+  background: none;
+  font-size: 48px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+}
+#banner .carousel-indicators li {
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  #banner .carousel-content {
+    width: 60%;
+  }
+  #banner .carousel-control-prev, #banner .carousel-control-next {
+    width: 5%;
+  }
+}
+@media (max-width: 992px) {
+  #banner {
+    height: calc(100vh - 70px);
+  }
+  #banner .carousel-content h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  #banner .carousel-content p {
+    font-size: 15px;
+  }
+}
+@media (max-height: 500px) {
+  #banner {
+    height: 120vh;
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {

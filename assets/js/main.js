@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -113,6 +113,18 @@
       }
     }
   });
+
+/**
+ * Banner carousel indicators
+ */
+let bannerCarouselIndicators = select("#banner-carousel-indicators")
+let bannerCarouselItems = select('#bannerCarousel .carousel-item', true)
+
+bannerCarouselItems.forEach((item, index) => {
+  (index === 0) ?
+  bannerCarouselIndicators.innerHTML += "<li data-bs-target='#bannerCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+    bannerCarouselIndicators.innerHTML += "<li data-bs-target='#bannerCarousel' data-bs-slide-to='" + index + "'></li>"
+});
 
   /**
    * Animation on scroll
