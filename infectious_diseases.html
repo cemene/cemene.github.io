@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CEMENE - Central Multiusuário de Espectroscopia do Nordeste</title>
+  <title>CEMENE - Doenças Infecciosas e CEMENE</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -40,11 +40,11 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-  <!--<header id="header" class="d-flex align-items-center">-->
-
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto"><a href="index.html"><img src="./assets/img/logo.png"/></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -76,7 +76,7 @@
               <li><a href="students.html">Alunos</a></li>
               <li><a href="provenance.html">Árvore Genealógica</a></li>
               <li><a href="#">Colaboradores BSTR</a></li>
-              <li><i><a href="in_memorian.html">In Memorian</a></i></li>
+              <li><i><a href="#">In Memorian</a></i></li>
               <li><a href="bibliographic_production.html">Livros, Dissertações e Teses</a></li>
               <li><a href="professors_bstr.html">Professores</a></li>
               <li><a href="about_bstr.html">Sobre BSTR</a></li>
@@ -93,48 +93,46 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-content-center align-items-center">
-    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>CEMENE</h1>
-      <h2>Central Multiusuário de Espectroscopia do Nordeste</h2>
-      <h2>Laboratório de Terras Raras - BSTR</h2>
-      <div class="text-center"><a href="infectious_diseases.html" class="btn-get-started">Covid-19 e CEMENE</a></div>
-      <!--<a href="courses.html" class="btn-get-started">Get Started</a>-->
-    </div>
-  </section><!-- End Hero -->
-
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>CEMENE</h2>
+        <p>Central Multiusuário de Espectroscopia do Nordeste</p>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
       <div class="container" data-aos="fade-up">
 
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Central Multiusuário de Espectroscopia do Nordeste - CEMENE</h3>
-            <p class="fst-italic">
-              o CEMENE está integrado ao Laboratório de Espectroscopia de Terras Raras - BSTR, localizado no Departamento de Química Fundamental
-              - dQF, da Universidade Federal de Pernambuco - UFPE. Desde 1972, o BSTR vem se dedicando no desenvolvimento e
-              planejamento de novos materiais, em especial, aqueles com propriedades espectroscópicas singulares. Neste panorama, o nosso
-              laboratório foi e continua sendo responsável pela nucleação de vários grupos em espectroscopia de Teras Raras em todo o Brasil.
-              Ademais, o laboratório BSTR integrou:
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Três coordenações de Institutos Nacionais de Ciência e Tecnologia - INCTs.</li>
-              <li><i class="bi bi-check-circle"></i> Três Núcleos de Excelência em Materiais Lantanídecos financiados pelo PRONEX/CNPq/FINEP.</li>
-            </ul>
+        <div class="row mt-5">
 
-          </div>
+            <div class="text-center">
+              <a href="#" class="get-started-btn">Educação</a>
+              <a href="#" class="get-started-btn">Pesquisa</a>
+              <a href="#" class="get-started-btn">Inovação</a>
+            </div>
+
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Popular Courses Section ======= -->
+    <section id="popular-courses" class="courses">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>CEMENE</h2>
+          <p>Doenças Infectocontagiosas</p>
+        </div>
 
 
+      </div>
+    </section><!-- End Popular Courses Section -->
 
   </main><!-- End #main -->
 
@@ -155,7 +153,6 @@
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
-
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>-->
@@ -165,7 +162,6 @@
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
       </div>
     </div>
-
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
@@ -180,6 +176,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+      function msg() {
+        alert("Mensagem enviada com sucesso!");
+      }
+  </script>
 
 </body>
 
